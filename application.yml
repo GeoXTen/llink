@@ -1,6 +1,8 @@
 server:
-  port: 29995
   address: 0.0.0.0
+  port: 29995
+  http2:
+    enabled: false
 
 lavalink:
   plugins:
@@ -16,135 +18,84 @@ lavalink:
       repository: "https://maven.lavalink.dev/releases"
   server:
     password: "jokowi"
-    sources:
-      youtube: false  # Disabled - using youtube-plugin instead
-      bandcamp: true
-      soundcloud: true
-      twitch: true
-      vimeo: true
-      http: true
-      local: false
-    sourceManagers:
-      # youtube handled by youtube-plugin
-      - "soundcloud"
-      - "bandcamp"
-      - "twitch"
-      - "vimeo"
-      - "http"
-    filters:
-      volume: true
-      equalizer: true
-      karaoke: true
-      timescale: true
-      tremolo: true
-      vibrato: true
-      distortion: true
-      rotation: true
-      channelMix: true
-      lowPass: true
-    bufferDurationMs: 200          # Ultra-low latency
-    frameBufferDurationMs: 2000    # Minimal memory usage
-    opusEncodingQuality: 6         # Lower quality for better performance
-    resamplingQuality: LOW         # Fastest resampling
+    bufferDurationMs: 400
+    frameBufferDurationMs: 1000
+    gcWarnings: true
+    opusEncodingQuality: 5
+    playerUpdateInterval: 5
+    resamplingQuality: MEDIUM
+    soundcloudSearchEnabled: true
+    youtubeSearchEnabled: true
+    youtubePlaylistLoadLimit: 6
     trackStuckThresholdMs: 10000
     useSeekGhosting: true
-    youtubePlaylistLoadLimit: 25   # Strict limit
-    playerUpdateInterval: 15       # Less frequent updates
-    youtubeSearchEnabled: true
-    soundcloudSearchEnabled: true
-    gc-warnings: false
-
-metrics:
-  prometheus:
-    enabled: false
-    endpoint: /metrics
-
-sentry:
-  dsn: ""
-  environment: ""
-
-logging:
-  file:
-    path: ./logs/
-
-  level:
-    root: INFO
-    lavalink: INFO
-
-  logback:
-    rollingpolicy:
-      max-file-size: 10MB
-      max-history: 7
+    filters:
+      equalizer: true
+      volume: true
+      timescale: true
+      channelMix: true
+      distortion: true
+      karaoke: true
+      lowPass: true
+      rotation: true
+      tremolo: true
+      vibrato: true
+    sources:
+      bandcamp: true
+      http: true
+      local: false
+      nico: false
+      soundcloud: true
+      twitch: false
+      vimeo: false
+      youtube: false
 
 plugins:
   youtube:
     enabled: true
-    allowSearch: true
-    allowDirectVideoIds: true
-    allowDirectPlaylistIds: true
-    # Clients that work WITHOUT OAuth login (order matters!)
-    clients:
-      - MUSIC                    # YouTube Music - best for music
-      - WEB                      # Standard web client
-      - WEBEMBEDDED              # Embedded player
-      - TVHTML5EMBEDDED          # TV embedded
-      - ANDROID_MUSIC            # Android Music app
-      - ANDROID_TESTSUITE        # Android test
-      - IOS                      # iOS client
-      - MEDIA_CONNECT            # Media connect
-    oauth:
-      enabled: false             # Disable OAuth - use public clients
-    # IPv6 rotation enabled - Tunnel Broker
-    ipv6:
-      enabled: true
-      block: "2001:470:66:256::/64"
-    # PoToken for YouTube authentication
     pot:
       token: "MnhT2vfKOIPrGlPmfGCghVao7Op9y51JxlDz5GbOOSKgXodzmFYTQ_Lg-lyGH552S5ymgQPlMQsX2g9NFyGq32sQ9PA6DLqLkcU5gSWNpdFNkxLUnYmeAzQqBYiYJ8asxVcn98xzcx3QEByRU225fAlDyyky7WKwUOU="
       visitorData: "CgtWSG51Z0ViNkNjbyiRtY3HBjIKCgJJThIEGgAgag=="
-  
-  lavasrc:
-    providers:
-      - "ytsearch:\"%ISRC%\""
-      - "ytsearch:%QUERY%"
-    sources:
-      spotify: true
-      applemusic: false
-      deezer: false
-      yandexmusic: false
-      flowerytts: false
-      youtube: true
-    spotify:
-      clientId: "e311e16239d2491fb6c91f90facb0371"
-      clientSecret: "cb3f5ae4c54542d09528c07318ba8060"
-      countryCode: "US"
-      playlistLoadLimit: 0
-      albumLoadLimit: 0
-  
-  sponsorblock:
-    enabled: true
-    categories:
-      - sponsor          # Paid promotion
-      - selfpromo        # Unpaid/Self promotion
-      - interaction      # Interaction reminder (like, subscribe)
-      - intro            # Intermission/Intro animation
-      - outro            # Endcards/Credits
-      - preview          # Preview/Recap
-      - music_offtopic   # Non-music sections
-  
-  lavasearch:
-    enabled: true
-    sources:
-      - youtube
-      - soundcloud
-      - spotify
-  
-  lavalyrics:
-    enabled: true
-    sources:
-      - spotify          # Fetch lyrics from Spotify
-      - youtube          # Fetch lyrics from YouTube Music
-      - deezer           # Fetch lyrics from Deezer
-      - genius           # Fetch lyrics from Genius
-  
 
+lavasrc:
+  providers:
+    - "spsearch:%QUERY%"
+    - "ytmsearch:\"%ISRC%\""
+    - "ytmsearch:%QUERY%"
+  sources:
+    spotify: true
+    applemusic: false
+    deezer: false
+    flowerytts: false
+    yandexmusic: false
+  spotify:
+    clientId: "e311e16239d2491fb6c91f90facb0371"
+    clientSecret: "cb3f5ae4c54542d09528c07318ba8060"
+    countryCode: "US"
+    playlistLoadLimit: 6
+    albumLoadLimit: 6
+
+logging:
+  level:
+    root: INFO
+    lavalink: INFO
+  file:
+    path: ./logs/
+  logback:
+    rollingPolicy:
+      maxFileSize: 100MB
+      maxHistory: 7
+  request:
+    enabled: false
+    includeClientInfo: false
+    includeHeaders: false
+    includePayload: false
+    includeQueryString: false
+
+metrics:
+  prometheus:
+    enabled: false
+
+sentry:
+  dsn: ""
+  environment: ""
