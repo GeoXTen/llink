@@ -1,0 +1,72 @@
+2025-12-08T10:41:39.625+08:00  INFO 4120 --- [Lavalink] [           main] lavalink.server.Launcher                 : Starting Launcher v4.1.1 using Java 17.0.17 with PID 4120 (C:\Users\Qiqi\bot_v2\lavalink\Lavalink.jar started by Qiqi in C:\Users\Qiqi\bot_v2\lavalink)
+2025-12-08T10:41:41.705+08:00  INFO 4120 --- [Lavalink] [           main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2025-12-08T10:41:42.924+08:00  INFO 4120 --- [Lavalink] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d6bf653-92ea-3fde-943a-10b9f8cd696e
+2025-12-08T10:41:44.570+08:00  INFO 4120 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Found plugin 'lavasrc-plugin' version '4.8.1'
+2025-12-08T10:41:45.591+08:00  INFO 4120 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Found plugin 'youtube-plugin' version '1.16.0'
+2025-12-08T10:41:48.690+08:00  INFO 4120 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Loaded 'lavasrc-plugin.jar' (202 classes)
+2025-12-08T10:41:48.711+08:00  INFO 4120 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Loaded 'youtube-plugin.jar' (17 classes)
+2025-12-08T10:41:49.263+08:00  INFO 4120 --- [Lavalink] [           main] lavalink.server.Launcher                 : Started Launcher in 11.519 seconds (process running for 21.257)
+2025-12-08T10:41:49.419+08:00  INFO 4120 --- [Lavalink] [           main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        4.1.1
+	Build time:     05.06.2025 07:37:42 UTC
+	Branch          HEAD
+	Commit:         4238202
+	Commit time:    05.06.2025 07:11:37 UTC
+	JVM:            17.0.17
+	Lavaplayer      2.2.3
+
+2025-12-08T10:41:49.436+08:00  INFO 4120 --- [Lavalink] [           main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2025-12-08T10:41:51.842+08:00  WARN 4120 --- [Lavalink] [           main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-12-08T10:41:52.968+08:00  INFO 4120 --- [Lavalink] [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2025-12-08T10:41:54.046+08:00  INFO 4120 --- [Lavalink] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3460 ms
+2025-12-08T10:41:54.263+08:00  INFO 4120 --- [Lavalink] [           main] c.g.t.lavasrc.plugin.LavaSrcPlugin       : Loading LavaSrc plugin...
+2025-12-08T10:41:54.338+08:00  INFO 4120 --- [Lavalink] [           main] c.g.t.lavasrc.plugin.LavaSrcPlugin       : Registering Youtube Source audio source manager...
+2025-12-08T10:41:56.452+08:00  INFO 4120 --- [Lavalink] [           main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2025-12-08T10:41:56.994+08:00  INFO 4120 --- [Lavalink] [           main] c.g.t.lavasrc.plugin.LavaSrcPlugin       : Registering Spotify audio source manager...
+2025-12-08T10:41:56.995+08:00  WARN 4120 --- [Lavalink] [           main] d.l.youtube.plugin.YoutubePluginLoader   : Missing "youtube.clients" or ClientProvider not initialised! Default clients will be used.
+2025-12-08T10:41:57.019+08:00  INFO 4120 --- [Lavalink] [           main] d.l.youtube.plugin.YoutubePluginLoader   : YouTube source initialised with clients: WEB_REMIX, ANDROID_VR, WEB, WEB_EMBEDDED_PLAYER 
+2025-12-08T10:41:57.264+08:00  INFO 4120 --- [Lavalink] [           main] l.server.config.KoeConfiguration         : OS: WINDOWS, Arch: X86_64
+2025-12-08T10:41:57.328+08:00  INFO 4120 --- [Lavalink] [           main] l.server.config.KoeConfiguration         : Enabling JDA-NAS
+2025-12-08T10:41:57.332+08:00  INFO 4120 --- [Lavalink] [           main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2025-12-08T10:41:57.344+08:00  INFO 4120 --- [Lavalink] [           main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2025-12-08T10:41:57.385+08:00  WARN 4120 --- [Lavalink] [           main] l.server.config.SentryConfiguration      : Turning off sentry
+2025-12-08T10:41:57.984+08:00  INFO 4120 --- [Lavalink] [           main] io.undertow                              : starting server: Undertow - 2.3.13.Final
+2025-12-08T10:41:58.001+08:00  INFO 4120 --- [Lavalink] [           main] org.xnio                                 : XNIO version 3.8.8.Final
+2025-12-08T10:41:58.015+08:00  INFO 4120 --- [Lavalink] [           main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2025-12-08T10:41:58.174+08:00  INFO 4120 --- [Lavalink] [           main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2025-12-08T10:41:58.300+08:00  INFO 4120 --- [Lavalink] [           main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port 2333 (http) with context path '/'
+2025-12-08T10:41:58.363+08:00  INFO 4120 --- [Lavalink] [           main] lavalink.server.Launcher                 : Started Launcher in 9.087 seconds (process running for 30.358)
+2025-12-08T10:41:58.365+08:00  INFO 4120 --- [Lavalink] [           main] lavalink.server.Launcher                 : Lavalink is ready to accept connections.
+2025-12-08T10:42:24.834+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-2] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-08T10:42:24.840+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-08T10:42:24.841+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-08T10:42:24.881+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-2] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /[0:0:0:0:0:0:0:1]:61281
+2025-12-08T10:42:24.905+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/websocket
+2025-12-08T10:42:24.994+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-2] lavalink.server.io.SocketServer          : Connection successfully established from Momoify
+2025-12-08T10:42:25.027+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/info?trace=true
+2025-12-08T10:43:58.962+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:kotori"
+2025-12-08T10:43:59.170+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-3] d.l.y.http.YoutubeAccessTokenTracker     : Updating YouTube visitor id succeeded, new one is CgtWNkMxM3o5bmtoQSju9tjJBjIKCgJJRBIEGgAgVjoMCAEgh6bo3-XtjptpWNaE89OExdqcWw%3D%3D, next update will be after 600 seconds.
+2025-12-08T10:43:59.535+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-3] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search results for: kotori
+2025-12-08T10:43:59.561+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytsearch%3Akotori&trace=true
+2025-12-08T10:43:59.639+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-3] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/v35fjbb69q8ijvbb/players/847747001537527809?trace=true, payload={"track":{"encoded":"QAAAiAMAJktPVE9SSeOAjOenmOWvhuOAjU9mZmljaWFsIE11c2ljIFZpZGVvAAZLT1RPUkkAAAAAAAOSEAALc1J3QzRscEQ0TUEAAQAraHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1zUndDNGxwRDRNQQAAAAd5b3V0dWJlAAAAAAAAAAA=","userData":{"requester":{"id":"572614372812390410","bot":false,"system":false,"flags":128,"username":"geonotfounds","globalName":"?Geo?","discriminator":"0","avatar":"fe83e6a9226965bd38ad3a81ef807c46","avatarDecoration":null,"avatarDecorationData":null,"collectibles":{"nameplate":{"skuId":"1349849614286585866","asset":"nameplates/nameplates/cityscape/","label":"COLLECTIBLES_NAMEPLATES_CITYSCAPE_A11Y","palette":"violet"}},"primaryGuild":{"identityGuildId":"860818420882341909","identityEnabled":true,"tag":"SUKT","badge":"59c0f381f2399f5317d14ebcda909857"},"createdTimestamp":1556592305139,"defaultAvatarURL":"https://cdn.discordapp.com/embed/avatars/3.png","tag":"geonotfounds","avatarURL":"https://cdn.discordapp.com/avatars/572614372812390410/fe83e6a9226965bd38ad3a81ef807c46.webp","displayAvatarURL":"https://cdn.discordapp.com/avatars/572614372812390410/fe83e6a9226965bd38ad3a81ef807c46.webp","guildTagBadgeURL":"https://cdn.discordapp.com/guild-tag-badges/860818420882341909/59c0f381f2399f5317d14ebcda909857.webp"}}},"volume":75,"position":0}
+2025-12-08T10:44:00.051+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/v35fjbb69q8ijvbb/players/847747001537527809?trace=true, payload={"voice":{"token":"2aeda38f8724f922","endpoint":"c-sin14-316121ab.discord.media:8443","sessionId":"c24d72963a2d228816674e34757f8e3f"}}
+2025-12-08T10:44:00.508+08:00  INFO 4120 --- [Lavalink] [back-1-thread-1] c.s.l.c.natives.NativeLibraryLoader      : Native library libmpg123-0: loading with filter com.sedmelluq.discord.lavaplayer.natives.ConnectorNativeLibLoader$$Lambda$1042/0x000002023783a000@7565afbb
+2025-12-08T10:44:00.542+08:00  INFO 4120 --- [Lavalink] [back-1-thread-1] c.s.l.c.natives.NativeLibraryLoader      : Native library libmpg123-0: successfully loaded.
+2025-12-08T10:44:00.543+08:00  INFO 4120 --- [Lavalink] [back-1-thread-1] c.s.l.c.natives.NativeLibraryLoader      : Native library connector: loading with filter null
+2025-12-08T10:44:00.737+08:00  INFO 4120 --- [Lavalink] [back-1-thread-1] c.s.l.c.natives.NativeLibraryLoader      : Native library connector: successfully loaded.
+2025-12-08T10:47:04.029+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Got request to load for identifier "ytsearch:kotori"
+2025-12-08T10:47:04.422+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-2] l.server.player.AudioLoaderRestHandler   : Loaded playlist Search results for: kotori
+2025-12-08T10:47:04.425+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/loadtracks?identifier=ytsearch%3Akotori&trace=true
+2025-12-08T10:47:11.472+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/v35fjbb69q8ijvbb/players/847747001537527809?trace=true, payload={"track":{"encoded":null},"paused":false}
+2025-12-08T10:47:11.482+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-2] l.server.io.RequestLoggingFilter         : PATCH /v4/sessions/v35fjbb69q8ijvbb/players/847747001537527809?noReplace=true&trace=true, payload={"track":{"encoded":"QAAAjAMAKktvdG9yaSAtIERlYXRoIEZyb20gQWJvdmUgKE9mZmljaWFsIEF1ZGlvKQAGS290b3JpAAAAAAADYzAAC0p6a2toZ25uaFBBAAEAK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9Snpra2hnbm5oUEEAAAAHeW91dHViZQAAAAAAAAAA","userData":{"requester":{"id":"572614372812390410","bot":false,"system":false,"flags":128,"username":"geonotfounds","globalName":"?Geo?","discriminator":"0","avatar":"fe83e6a9226965bd38ad3a81ef807c46","banner":null,"accentColor":null,"avatarDecoration":null,"avatarDecorationData":null,"collectibles":{"nameplate":{"skuId":"1349849614286585866","asset":"nameplates/nameplates/cityscape/","label":"COLLECTIBLES_NAMEPLATES_CITYSCAPE_A11Y","palette":"violet"}},"primaryGuild":{"identityGuildId":"860818420882341909","identityEnabled":true,"tag":"SUKT","badge":"59c0f381f2399f5317d14ebcda909857"},"createdTimestamp":1556592305139,"defaultAvatarURL":"https://cdn.discordapp.com/embed/avatars/3.png","hexAccentColor":null,"tag":"geonotfounds","avatarURL":"https://cdn.discordapp.com/avatars/572614372812390410/fe83e6a9226965bd38ad3a81ef807c46.webp","displayAvatarURL":"https://cdn.discordapp.com/avatars/572614372812390410/fe83e6a9226965bd38ad3a81ef807c46.webp","bannerURL":null,"guildTagBadgeURL":"https://cdn.discordapp.com/guild-tag-badges/860818420882341909/59c0f381f2399f5317d14ebcda909857.webp"}}},"volume":75,"position":0}
+2025-12-08T10:47:59.959+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-2] l.server.io.RequestLoggingFilter         : DELETE /v4/sessions/v35fjbb69q8ijvbb/players/847747001537527809?trace=true
+2025-12-08T10:48:44.274+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-2] l.server.io.RequestLoggingFilter         : GET /v4/info
+2025-12-08T10:48:44.278+08:00  INFO 4120 --- [Lavalink] [  XNIO-1 task-3] l.server.io.RequestLoggingFilter         : GET /version
